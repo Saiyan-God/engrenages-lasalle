@@ -1,0 +1,74 @@
+:host {
+  --bg-color-main: #000;
+  --bg-color-secondary: white;
+  --text-color-main: white;
+  --text-color-secondary: #00ff00;
+}
+
+.topnav {
+  background-color: var(--bg-color-main);
+  overflow: hidden;
+}
+
+.title {
+  text-align: center; 
+}
+
+.languages {
+  text-align: right;
+}
+
+.btn.btn-secondary.language-button {
+  background-color: var(--bg-color-main);
+  color: var(--bg-color-secondary);
+}
+
+.btn.btn-secondary.language-button.active {
+  background-color: var(--text-color-main);
+  color: var(--bg-color-main);
+  border: var(--bg-color-secondary);
+}
+.logo {
+  color: var(--text-color-main);
+  display: inline-block;
+  font-size: 2.2em;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.image {
+  height: 350px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image-1 {  
+  background-image: url('../assets/img/img-1.jpg');
+}
+
+#image-2 {
+  background-image: url('../assets/img/img-2.jpg');
+}
+
+#image-3 {
+  background-image: url('../assets/img/img-3.jpg');
+}
+
+
+.information {
+  background-color: var(--bg-color-main);
+  color: var(--text-color-main);
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 2em;
+}
+
+.contact {
+  display: block;
+  margin: 0.5em;
+}
+
+.contact-label {
+  color: var(--text-color-secondary);
+}

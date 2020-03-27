@@ -1,0 +1,45 @@
+<div class="topnav languages">
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary language-button active">
+      <input type="radio" name="options" id="english" autocomplete="off" (click)="changeLanguage($event.target.id)" checked ngModel> English
+    </label>
+    <label class="btn btn-secondary language-button">
+      <input type="radio" name="options" id="french" autocomplete="off" (click)="changeLanguage($event.target.id)" ngModel> Francais
+    </label>
+  </div>
+</div>
+<div class="topnav title">
+  <div class="logo">
+    ENGRENAGE LASALLE INC.
+  </div>
+</div>
+<div class="image" id="image-1"></div>
+<div class="card text-center information">
+  <h2 class="card-header">{{lang.company_summary}}</h2>
+  <div class="card-body">
+    <p class="card-text">{{lang.company_statement}}</p>
+  </div>
+</div>
+<div class="image" id="image-2"></div>
+<div class="card information">
+  <h2 class="card-header text-center">{{labels.contact}}</h2>
+  <div class="row">
+  <ul class="list-group list-group-flush col-md">
+    <li class="contact"><i class="contact-label">{{labels.telephone}}:</i><br>{{telephone}}</li>
+    <li class="contact"><i class="contact-label">{{labels.fax}}:</i><br>{{fax}}</li>
+    <li class="contact"><i class="contact-label">{{labels.email}}:</i><br>{{email}}</li>
+    <li class="contact"><i class="contact-label">{{labels.location}}:</i><br>{{street}}, {{city}}, {{postal_code}}</li>
+  </ul>
+  <div class=" col-md">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11196.40375869351!2d-73.63142225416898!3d45.44762201616188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91127eb93b2c7%3A0xa79298df5928b8a0!2sLasalle%2C%20QC%20H8N%202W8!5e0!3m2!1sen!2sca!4v1585279050655!5m2!1sen!2sca" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+
+</div>
+</div>
+<div class="image" id="image-3"></div>
+<div class="card text-center information">
+  <h5 class="card-header">{{labels.about}}</h5>
+  <div class="card-body">
+    <p class="card-text">{{lang.company_about}}</p>
+  </div>
+</div>
