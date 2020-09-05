@@ -59,9 +59,9 @@
 .information {
   background-color: var(--bg-color-main);
   color: var(--text-color-main);
-  padding-left: 5em;
-  padding-right: 5em;
-  padding-bottom: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
 }
 
 .contact {
