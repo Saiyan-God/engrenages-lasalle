@@ -53,7 +53,7 @@ export class AppComponent {
 		'email' : "Email"
 	}
 
-	lang = this.en_lang;
+	lang = this.fr_lang;
 	labels = this.en_labels;
 
 	title = 'engrenages-lasalle';
