@@ -69,7 +69,7 @@ export class AppComponent {
 	city = "LaSalle, Quebec";
 	postal_code = "H8N 2W8";
 
-	product_image_path = '../assets/img';
+	product_image_path = '/assets/img';
 
 	products = [
 		{
