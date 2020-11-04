@@ -38,6 +38,7 @@
 .image {
   height: 350px; 
   background-attachment: fixed;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,4 +76,14 @@
 
 .back-panel {
   background-color: black;
+}
+
+.carousel-image {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-view {
+    position: relative;
 }

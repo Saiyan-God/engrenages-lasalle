@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -73,176 +73,52 @@ export class AppComponent {
 
 	products = [
 		{
-			image : this.product_image_path + '/img1.jpeg',
-			name : 'Image 1',
-			description: 'Description for image 1'
+			image : this.product_image_path + '/img35.jpeg',
+			name : 'Image 35',
+			description: 'Description for image 35'
 		},
 		{
-			image : this.product_image_path + '/img2.jpeg',
-			name : 'Image 2',
-			description: 'Description for image 2'
+			image : this.product_image_path + '/img36.jpeg',
+			name : 'Image 36',
+			description: 'Description for image 36'
 		},
 		{
-			image : this.product_image_path + '/img3.jpeg',
-			name : 'Image 3',
-			description: 'Description for image 3'
+			image : this.product_image_path + '/img37.jpeg',
+			name : 'Image 37',
+			description: 'Description for image 37'
 		},
 		{
-			image : this.product_image_path + '/img4.jpeg',
-			name : 'Image 4',
-			description: 'Description for image 4'
+			image : this.product_image_path + '/img38.jpeg',
+			name : 'Image 38',
+			description: 'Description for image 38'
 		},
 		{
-			image : this.product_image_path + '/img5.jpeg',
-			name : 'Image 5',
-			description: 'Description for image 5'
+			image : this.product_image_path + '/img39.jpeg',
+			name : 'Image 39',
+			description: 'Description for image 39'
 		},
 		{
-			image : this.product_image_path + '/img6.jpeg',
-			name : 'Image 6',
-			description: 'Description for image 6'
+			image : this.product_image_path + '/img40.jpeg',
+			name : 'Image 40',
+			description: 'Description for image 40'
 		},
 		{
-			image : this.product_image_path + '/img7.jpeg',
-			name : 'Image 7',
-			description: 'Description for image 7'
+			image : this.product_image_path + '/img41.jpeg',
+			name : 'Image 41',
+			description: 'Description for image 41'
 		},
 		{
-			image : this.product_image_path + '/img8.jpeg',
-			name : 'Image 8',
-			description: 'Description for image 8'
-		},
-		{
-			image : this.product_image_path + '/img9.jpeg',
-			name : 'Image 9',
-			description: 'Description for image 9'
-		},
-		{
-			image : this.product_image_path + '/img10.jpeg',
-			name : 'Image 10',
-			description: 'Description for image 10'
-		},
-		{
-			image : this.product_image_path + '/img11.jpeg',
-			name : 'Image 11',
-			description: 'Description for image 11'
-		},
-		{
-			image : this.product_image_path + '/img12.jpeg',
-			name : 'Image 12',
-			description: 'Description for image 12'
-		},
-		{
-			image : this.product_image_path + '/img13.jpeg',
-			name : 'Image 13',
-			description: 'Description for image 13'
-		},
-		{
-			image : this.product_image_path + '/img14.jpeg',
-			name : 'Image 14',
-			description: 'Description for image 14'
-		},
-		{
-			image : this.product_image_path + '/img15.jpeg',
-			name : 'Image 15',
-			description: 'Description for image 15'
-		},
-		{
-			image : this.product_image_path + '/img16.jpeg',
-			name : 'Image 16',
-			description: 'Description for image 16'
-		},
-		{
-			image : this.product_image_path + '/img17.jpeg',
-			name : 'Image 17',
-			description: 'Description for image 17'
-		},
-		{
-			image : this.product_image_path + '/img18.jpeg',
-			name : 'Image 18',
-			description: 'Description for image 18'
-		},
-		{
-			image : this.product_image_path + '/img19.jpeg',
-			name : 'Image 19',
-			description: 'Description for image 19'
-		},
-		{
-			image : this.product_image_path + '/img20.jpeg',
-			name : 'Image 20',
-			description: 'Description for image 20'
-		},
-		{
-			image : this.product_image_path + '/img21.jpeg',
-			name : 'Image 21',
-			description: 'Description for image 21'
-		},
-		{
-			image : this.product_image_path + '/img22.jpeg',
-			name : 'Image 22',
-			description: 'Description for image 22'
-		},
-		{
-			image : this.product_image_path + '/img23.jpeg',
-			name : 'Image 23',
-			description: 'Description for image 23'
-		},
-		{
-			image : this.product_image_path + '/img24.jpeg',
-			name : 'Image 24',
-			description: 'Description for image 24'
-		},
-		{
-			image : this.product_image_path + '/img25.jpeg',
-			name : 'Image 25',
-			description: 'Description for image 25'
-		},
-		{
-			image : this.product_image_path + '/img26.jpeg',
-			name : 'Image 26',
-			description: 'Description for image 26'
-		},
-		{
-			image : this.product_image_path + '/img27.jpeg',
-			name : 'Image 27',
-			description: 'Description for image 27'
-		},
-		{
-			image : this.product_image_path + '/img28.jpeg',
-			name : 'Image 28',
-			description: 'Description for image 28'
-		},
-		{
-			image : this.product_image_path + '/img29.jpeg',
-			name : 'Image 29',
-			description: 'Description for image 29'
-		},
-		{
-			image : this.product_image_path + '/img30.jpeg',
-			name : 'Image 30',
-			description: 'Description for image 30'
-		},
-		{
-			image : this.product_image_path + '/img31.jpeg',
-			name : 'Image 31',
-			description: 'Description for image 31'
-		},
-		{
-			image : this.product_image_path + '/img32.jpeg',
-			name : 'Image 32',
-			description: 'Description for image 32'
-		},
-		{
-			image : this.product_image_path + '/img33.jpeg',
-			name : 'Image 33',
-			description: 'Description for image 33'
-		},
-		{
-			image : this.product_image_path + '/img34.jpeg',
-			name : 'Image 34',
-			description: 'Description for image 34'
+			image : this.product_image_path + '/img42.jpeg',
+			name : 'Image 42',
+			description: 'Description for image 42'
 		}
 	];
+	screenWidth = 100;
+	screenHeight = 100;
+
+	constructor() {
+		this.setScreenSize();
+	}
 
 	changeLanguage(lang) {
 		if(lang === 'english'){
@@ -253,5 +129,13 @@ export class AppComponent {
 			this.lang = this.fr_lang;
 			this.labels = this.fr_labels;
 		}
+	}
+
+	@HostListener('window:resize', ['$event'])
+	setScreenSize(event?) {
+		this.screenWidth = window.innerWidth;
+		this.screenHeight = Math.min(window.innerHeight*0.90, this.screenWidth/2);
+		console.log('test');
+		console.log(this.screenWidth);
 	}
 }
